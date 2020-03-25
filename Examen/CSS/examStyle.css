@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Merriweather|Raleway&display=swap');
+
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+body {
+    background-color: rgb(128, 128, 128);
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 9000;
+    background-color: gainsboro;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleEx {
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contPadre {
+    display: grid;
+    grid-template-columns: 80px [sepIzq] 1fr [fin1] 2fr [fin2] 2fr [fin3] 2fr [fin4] 1fr [fin5] 80px [sepDer];
+    grid-template-rows: 80px [sepSup]  1fr [fin1Inf];
+    grid-column-gap: 32px;
+}
+
+.contHijo {
+    border-radius: 2.5%;
+    padding: 24px;
+    padding-bottom: 12px;
+    background-color: white;
+    grid-row: sepSup / fin1Inf;
+    text-align: center;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.637));
+}
+
+.contHijo:hover {
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+.p1 {
+    grid-column-end: fin2;
+}
+
+.p2 {
+    grid-column-end: fin3;
+}
+
+.p3 {
+    grid-column-end: fin4;
+}
+
+.imagenP {
+    height: 70px;
+}
+
+.imagenP img {
+    position: relative;
+    top: -84px;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    filter: drop-shadow(0 0 0.3rem gray);
+}
+
+.nombre {
+    font-size: 1.5em;
+    padding-bottom: 12px;
+    font-family: 'Lora', serif;
+}
+
+.carrera {
+    color: gray;
+    font-size: .9em;
+    padding-bottom: 16px;
+}
+
+.descrip {
+    text-align:justify;
+    padding-bottom: 12px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+}

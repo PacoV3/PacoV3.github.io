@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Registro
+	</title>
+</head>
+
+<body>
+	<h2>Paso 1: Tus datos</h2>
+	<label>Nombre:<input type="text" name="nom" required /></label>
+	</br>
+	<label>Email:<input type="email" name="em" /></label>
+	</br>
+	<label>Telefono:<input type="tel" name="tel" /></label>
+	</br>
+
+	<h2>Paso 2: Dirección de envío</h2>
+	<label>Dirección:<textarea name="dir" rows="10" cols="30"></textarea></label>
+	</br>
+	<label>Código postal:<input type="number" name="cp" /></label>
+	</br>
+	<label>Ciudad:<input type="text" name="cit" /></label>
+	</br>
+
+	<h2>Paso 3: Detalles de tarjeta</h2>
+	Tipo de Tarjeta:
+	</br>
+	<input id="visa" type="radio" name="card" value="1">
+	<img src="https://img.icons8.com/android/24/000000/visa.png">
+	<input id="citibanamex" type="radio" name="card" value="2">
+	<img src="https://img.icons8.com/cute-clipart/64/000000/citibank.png">
+	<input id="santander" type="radio" name="card" value="3">
+	<label for="santander">Santander</label>
+	</br>
+	</br>
+	<label>Número de tarjeta:<input type="number" name="num" required /></label>
+	</br>
+	<label>Código de seguridad:<input type="password" name="cod" required /></label>
+	</br>
+	<label>Nombre de tarjeta:<input type="text" name="nomTarjeta" required /></label>
+	</br>
+	<input type="submit" value="¡Comprar!">
+</body>
+
+</html>

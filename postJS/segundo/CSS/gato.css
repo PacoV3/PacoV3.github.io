@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    margin-top: 50px;
+}
+
+html, body {
+    background-color: #a0a0a0;
+}
+
+nav {
+    font-size: 1.4em;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 9000;
+    background-color: gainsboro;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contador {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 24px;
+    width: 20%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-bottom: 24px;
+    flex-direction: column;
+}
+
+#victorias {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#estado {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.conteo {
+    text-align: center;
+}
+
+#Xcount {
+    margin-right: 1em;
+}
+
+#Ocount {
+    margin-left: 1em;
+}
+
+main {
+    height: 80%;
+}
+
+.cuadro_padre {
+    display: grid;
+    justify-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 69%;
+    width: 69%;
+
+    /* Con decir que son 3 columnas se van moviendo las cosas */
+    font-size: 6em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.1em 1.1em 1.1em;
+    grid-gap: 4px 4px;
+}
+
+.cuadro_hijo {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.reinciar {
+    font-size: 1.3em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 24px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}

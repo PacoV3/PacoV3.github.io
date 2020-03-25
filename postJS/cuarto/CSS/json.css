@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Monoton|Ubuntu+Mono&display=swap');
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.titulo {
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 80px, 1fr, 1fr, 1fr, 80px;
+}
+
+input {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: .6em;
+}
+
+textarea {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: .6em;
+}
+
+.inputs div {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

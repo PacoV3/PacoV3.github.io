@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="CSS/reloj.css">
+    <link rel="stylesheet" href="CSS/cronometro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+</head>
+    <body>
+        <!-- USAR ::after en el CSS -->
+        <main>
+            <div class="contador">
+                <span class="tiempoContador minutos" id = "minutosContador"></span>
+                <span class="tiempoContador segundos" id = "segundosContador"></span>
+                <span class="tiempoContador milisegundos" id = "milisegundosContador"></span>
+            </div>
+            <div class="vuelta">
+                <span class="tiempoVuelta minutos" id = "minutosVuelta"></span>
+                <span class="tiempoVuelta segundos" id = "segundosVuelta"></span>
+                <span class="tiempoVuelta milisegundos" id = "milisegundosVuelta"></span>
+            </div>
+            <div class="button_cont">
+                <a class="example_e" href="reloj.html">Reloj</a>
+                <button class="example_e bttns" id="bttniniciar">
+                    Iniciar
+                </button>
+                <button class="example_e bttns" id="bttnDetener" style="display:none;">
+                    Detener
+                </button>
+                <button class="example_e bttns" id="bttnReanudar" style="display:none;">
+                    Reanudar
+                </button>
+                <button class="example_e bttns" id="bttnRestablecer" style="display:none;">
+                    Restablecer
+                </button>
+                <button class="example_e bttns" id="bttnVuelta" style="display:none;">
+                    Vuelta
+                </button>
+            </div>
+            <div class="datosLista">
+                <ol id="miLista">
+                </ol>
+            </div>
+        </main>
+        <script src="JS/crono.js"></script>
+    </body>
+</html>

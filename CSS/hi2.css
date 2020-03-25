@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+html {
+    background-color: dimgray;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: whitesmoke;
+    filter: drop-shadow(0 0 0.75rem black);
+    width: 90%;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto Slab', serif;
+}
+
+.hotel {
+    flex-basis: 75%;
+}
+
+.item {
+    display: flex;
+    border: white 8px solid;
+    flex-basis: 100%;
+
+    padding: 16px;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.imag img {
+    max-width: 250px;
+    width: 90%;
+    filter: drop-shadow(0 0 0.25rem black);
+    border: white 4px solid;
+}
+
+.nombreHotel h3 {
+    margin-top: 0px;
+    text-decoration: underline;
+}
+
+.imgAndDescrip {
+    display: flex;
+}
+
+.specialdeal {
+    font-weight: bold;
+    align-self: flex-end;
+    display: flex;
+    color: white;
+    font-size: 85%;
+    padding-left: .7em;
+    padding-right: .7em;
+    background-color: rgba(223, 49, 49, 0.842);
+    text-align: center;
+    filter: drop-shadow(1px 1px 2px gray);
+}
+
+.dealicon {
+    align-self: flex-end;
+    align-content: center;
+    margin: auto;
+    margin-right: 8px;
+}
+
+.reserva {
+    align-self: center;
+    font-weight: bold;
+    color: white;
+    font-size: 85%;
+    background-color: rgb(44, 44, 204);
+    padding-left: .7em;
+    padding-right: .7em;
+    filter: drop-shadow(1px 1px 2px gray);
+}
+
+.oldPrice p {
+    align-self: flex-end;
+    margin: 0;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+.newPrice p {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 1.4em;
+}

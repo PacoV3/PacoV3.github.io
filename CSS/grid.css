@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+html {
+    height: 150%;
+    margin-top: 45px;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+span {
+    display: block;
+}
+
+nav {
+    width: 100%;
+    height: 45px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(253, 155, 144);
+    display: flex;
+    align-items: center;
+}
+
+.nombreuni {
+    margin-left: 30px;
+}
+
+.masinfo {
+    border-radius: 10px;
+    padding: 4px;
+    background-color: rgb(255, 182, 174);
+    right: 8px;
+    position: absolute;
+}
+
+.horario {
+    display: grid;
+    grid-template-columns: [sep1] 50px [datos] 75px [lun] 1fr [mar] 1fr [mie] 1fr [jue] 1fr [vie] 1fr [sab] 1fr [sep2] 50px;
+    grid-template-rows: [titulo] 80px [esp1] 40px [esp2] 40px [h00] 1fr [h01] 1fr [h02] 1fr [h03] 1fr [h04] 1fr;
+    justify-items: center;
+}
+
+.header {
+    font-size: 80%;
+    align-self: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 9;
+}
+
+.hor {
+    align-self: center;
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+}
+
+.dias {
+    align-self: center;
+    grid-row: 2 / 3;
+    grid-column: 3 / 9;
+}
+
+.l {
+    align-self: center;
+    grid-column: 3 / 4;
+}
+
+.ma {
+    align-self: center;
+    grid-column: 4 / 5;
+}
+
+.mi {
+    align-self: center;
+    grid-column: 5 / 6;
+}
+
+.j {
+    align-self: center;
+    grid-column: 6 / 7;
+}
+
+.v {
+    align-self: center;
+    grid-column: 7 / 8;
+}
+
+
+.s {
+    align-self: center;
+    grid-column: 8 / 9;
+}
+
+.horas {
+    text-align: center;
+    align-self: center;
+    border-color: black;
+    grid-column: 2 / 3;
+}
+
+.hor00 {
+    grid-row: h00;
+}
+
+.hor01 {
+    grid-row: h01;
+}
+
+.hor02 {
+    grid-row: h02;
+}
+
+.hor03 {
+    grid-row: h03;
+}
+
+.hor04 {
+    grid-row: h04;
+}
+
+.finalhor00 {
+    grid-row-end: h01;
+}
+
+.finalhor01 {
+    grid-row-end: h02;
+}
+
+.finalhor02 {
+    grid-row-end: h03;
+}
+
+.finalhor03 {
+    grid-row-end: h04;
+}
+
+.finalhor04 {
+    grid-row-end: h05;
+}
+
+.card {
+    position: relative;
+    align-self: center;
+    text-align: center;
+    filter: drop-shadow(5px 5px 2px gray);
+    background-color: lightskyblue;
+    width: 90%;
+    height: 90%;
+}
+
+.x {
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    border: solid whitesmoke;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.x span {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+}
+
+.lunes {
+    grid-column: 3 / 4;
+}
+
+.martes {
+    grid-column: 4 / 5;
+}
+
+.miercoles {
+    grid-column: 5 / 6;
+}
+
+.jueves {
+    grid-column: 6 / 7;
+}
+
+.viernes {
+    grid-column: 7 / 8;
+}
+
+.sabados {
+    grid-column: 8 / 9;
+}
+
+.lun {
+    grid-column: 3 / 4;
+}
+
+.mar {
+    grid-column: 4 / 5;
+}
+
+.mie {
+    grid-column: 5 / 6;
+}
+
+.jue {
+    grid-column: 6 / 7;
+}
+
+.vie {
+    grid-column: 7 / 8;
+}
+
+.sab {
+    grid-column: 8 / 9;
+}
+
+.m1 {
+    background-color: lightskyblue;
+}
+
+.m2 {
+    background-color: #BBC6E1;
+}
+
+.m3 {
+    background-color: #E3D655;
+}
+
+.m4 {
+    background-color: lightsalmon;
+}
+
+.m5 {
+    background-color: rgb(230, 166, 120);
+}

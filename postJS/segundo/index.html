@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="CSS/gato.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gato</title>
+    </head>
+    <body>
+        <nav>
+            <div class="tituloJuego">
+                PacoJuegos
+            </div>
+        </nav>
+        <div class="contador">
+            <h2 id="victorias">Marcador</h2>
+            <h3 id="estado">Estado: En juego</h3>
+            <div class ="conteo">
+                <span id="Xcount">X: 0</span>
+                <span id="Ocount">O: 0</span>
+            </div>
+        </div>
+        <main>
+            <div class="cuadro_padre">
+                <span class="cuadro_hijo" id="cuadro00"></span>
+                <span class="cuadro_hijo" id="cuadro10"></span>
+                <span class="cuadro_hijo" id="cuadro20"></span>
+                <span class="cuadro_hijo" id="cuadro01"></span>
+                <span class="cuadro_hijo" id="cuadro11"></span>
+                <span class="cuadro_hijo" id="cuadro21"></span>
+                <span class="cuadro_hijo" id="cuadro02"></span>
+                <span class="cuadro_hijo" id="cuadro12"></span>
+                <span class="cuadro_hijo" id="cuadro22"></span>
+            </div>
+        </main>
+        <button class="reinciar" id="reinicio" disabled>
+            Reiniciar
+        </button>
+    <script src="JS/gatoJS.js"></script>
+    </body>
+</html>

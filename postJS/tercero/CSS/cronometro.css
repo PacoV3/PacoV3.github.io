@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Monoton|Ubuntu+Mono&display=swap');
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background: linear-gradient(90deg, #6030ce, #09b1ffb7) !important;
+}
+
+.bttns {
+    font-family: 'Ubuntu Mono', monospace !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.contador {
+    font-size: 3em;
+    padding-bottom: 16px;
+}
+
+.vuelta {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+}
+
+.milisegundos::after {
+    content: "ms";
+}
+
+.segundos::after {
+    content: "seg";
+}
+
+.minutos::after {
+    content: "min";
+}
+
+#miLista {
+    font-family: 'Ubuntu Mono', monospace !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+li {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size: 2em;
+}
+
+.datosLista {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 12px;
+}

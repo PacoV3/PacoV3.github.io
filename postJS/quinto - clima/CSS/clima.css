@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#titulo {
+    margin-top: 48px;
+}
+
+#clima7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 36px;
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.min::before {
+    content: "Temperatura Min: ";
+}
+
+.max::before {
+    content: "Temperatura Max: ";
+}
+
+.min::after {
+    content: " °C";
+}
+
+.max::after {
+    content: " °C";
+}
+
+.date::before {
+    content: "Día ";
+}
+
+.weather::before {
+    content: "Clima ";
+}
+
+.nublado {
+    background-color: rgb(135, 160, 206);
+}
+
+.datosPronostico {
+    grid-column-end: 2;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    align-self: center;
+}
+
+.dato {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.extrasPronostico {
+    grid-column-end: 3;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.termometro {
+    margin-left: 16px;
+    height: 64px;
+    width: 64px;
+}
+
+.txtTemperatura {
+    font-size: 2em;
+}

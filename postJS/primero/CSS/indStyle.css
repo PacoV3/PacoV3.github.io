@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 80px [sepIzq] 1fr [fin1] auto [fin2] 1fr [fin3] 80px [sepDer];
+    grid-template-rows: 70px [sepSup]  1fr [fin1Inf] 8px [a] 1fr [fin2Inf] 8px [b] 1fr [fin3Inf] 16px [c] auto [fin3Inf] 8px [d];
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    grid-column: fin1 / fin2;
+    grid-row-end: sepSup;
+}
+
+#input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: fin1 / fin2;
+    grid-row: sepSup / fin1Inf;
+}
+
+#input input {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    width: 150px;
+}
+
+#adivina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: fin1 / fin2;
+    grid-row: a / fin2Inf;
+}
+
+#adivina button {
+    width: 150px;
+}
+
+#reiniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: fin1 / fin2;
+    grid-row: b / fin3Inf;
+}
+
+#reiniciar button {
+    width: 150px;
+}
+
+#inten {
+    text-align: center;
+    grid-column: fin1 / fin2;
+    grid-row-start: c;
+}
+
+.intentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: fin1 / fin2;
+    grid-row-start: d;
+}
