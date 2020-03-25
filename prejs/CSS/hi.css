@@ -57,7 +57,8 @@ body {
 
 .item {
     margin-top: 8px;
-    overflow: right;
+    clear: both;
+    overflow: auto;
 }
 
 .varo {
@@ -66,8 +67,4 @@ body {
 
 .contenido span {
     font-weight: bold;
-}
-
-.separador {
-    clear: both;
 }
