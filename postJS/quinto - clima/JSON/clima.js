@@ -57,7 +57,7 @@ request.addEventListener("load", (e)=>{
     }
 });
 
-request.open("GET", "http://www.7timer.info/bin/civillight.php?lon=22.233105&lat=-97.861099&unit=metric&output=json&tzshift=0");
+request.open("GET", "http://www.7timer.info/bin/civillight.php?lon=-102&lat=23&unit=metric&output=json&tzshift=0");
 request.send();
 
 function corregirFecha(fecha) {

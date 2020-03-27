@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     font-family: sans-serif;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
+
 section {
     background-color: black;
     height: 100vh;
@@ -17,6 +19,10 @@ section {
 
 #carousel-example-2, .carousel-item img {
     height: 100vh;
+}
+
+.navbar {
+    height: 53px;
 }
 
 h1  {

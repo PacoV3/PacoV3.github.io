@@ -6,7 +6,7 @@ $( "#refresh" ).on( "click", (e) => {
         success: function ( response ) {
             let a = response;
             // Aquí ya está la información
-            $( ".hola" ).html( "Casos globales: " + a.cases + " Muertes: " + a.deaths + " Recuperados " + a.recovered );
+            $( ".hola" ).html( "Datos: Casos globales: " + a.cases + " Muertes: " + a.deaths + " Recuperados: " + a.recovered );
         }
     });
 });
