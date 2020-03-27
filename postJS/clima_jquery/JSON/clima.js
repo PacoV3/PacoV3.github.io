@@ -7,7 +7,7 @@ function corregirFecha(fecha) {
 window.onload = (e) => {
     /* Con ajax solamente
     $.ajax ({
-        url: "http://www.7timer.info/bin/civillight.php?lon=22.233105&lat=-97.861099&unit=metric&output=json&tzshift=0",
+        url: "http://www.7timer.info/bin/civillight.php?lon=-102&lat=23&unit=metric&output=json&tzshift=0",
         success: function ( response ) {
             const climaAJson = JSON.parse(response);
             // ...
@@ -16,7 +16,7 @@ window.onload = (e) => {
     */
     // Usando el $.get directo ( se usa .done, .fail, .always)
     $.get(
-        "http://www.7timer.info/bin/civillight.php?lon=22.233105&lat=-97.861099&unit=metric&output=json&tzshift=0"
+        "http://www.7timer.info/bin/civillight.php?lon=-102&lat=23&unit=metric&output=json&tzshift=0"
     ) .done ( function( response ) {
         const climaAJson = JSON.parse(response);
         let options = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
