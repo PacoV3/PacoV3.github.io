@@ -12,10 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio de Evidencias</title>
   </head>
-
   <body>
     <!-- nav de bootstrap -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Portafolio - Francisco Ventura</a>
       <button
         class="navbar-toggler"
@@ -80,99 +79,233 @@
         </form>
       </div>
     </nav>
-    <!--Carousel Wrapper-->
-    <div
-      id="carousel-example-2"
-      class="carousel slide carousel-fade"
-      data-ride="carousel"
-    >
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carousel-example-2"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carousel-example-2" data-slide-to="1"></li>
-        <li data-target="#carousel-example-2" data-slide-to="2"></li>
-      </ol>
-      <!--/.Indicators-->
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="view">
-            <a href="prejs/hola.html">
-              <img
-                class="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-                alt="Second slide"
-              />
-            </a>
-            <div class="mask rgba-black-light"></div>
+    <!-- /nav -->
+    <section>
+      <!--Carousel Wrapper-->
+      <div
+        id="carousel-example-2"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-example-2"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example-2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2"></li>
+          <li data-target="#carousel-example-2" data-slide-to="3"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="view">
+              <a href="prejs/hola.html">
+                <img
+                  class="d-block w-100"
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                  alt="Second slide"
+                />
+              </a>
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Página de registro</h3>
+              <p>Tema: HTML Crudo</p>
+            </div>
           </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive">Primera Página Web</h3>
-            <p>Tema: html simple</p>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <a href="prejs/menu.html">
+                <img
+                  class="d-block w-100"
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                  alt="Second slide"
+                />
+              </a>
+              <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Menú de restaurante</h3>
+              <p>Tema: CSS Float</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <a href="prejs/hotel.html">
+                <img
+                  class="d-block w-100"
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                  alt="Third slide"
+                />
+              </a>
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Página de Reservaciones</h3>
+              <p>Tema: CSS Flexbox</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <a href="prejs/horariogrid.html">
+                <img
+                  class="d-block w-100"
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                  alt="Forth slide"
+                />
+              </a>
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Ejemplo de Horario</h3>
+              <p>Tema: CSS Grid</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <!--Mask color-->
-          <div class="view">
-            <a href="prejs/menu.html">
-              <img
-                class="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                alt="Second slide"
-              />
-            </a>
-            <div class="mask rgba-black-strong"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive">Segunda Página Web</h3>
-            <p>Tema: </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!--Mask color-->
-          <div class="view">
-            <a href="prejs/hotel.html">
-              <img
-                class="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                alt="Third slide"
-              />
-            </a>
-            <div class="mask rgba-black-slight"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive">Slight mask</h3>
-            <p>Third text</p>
-          </div>
-        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a
+          class="carousel-control-prev"
+          href="#carousel-example-2"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel-example-2"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
       </div>
-      <!--/.Slides-->
-      <!--Controls-->
-      <a
-        class="carousel-control-prev"
-        href="#carousel-example-2"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carousel-example-2"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
-    </div>
-    <!--/.Carousel Wrapper-->
+      <!--/.Carousel Wrapper-->
+    </section>
+    <section>
+        <!--Carousel Wrapper-->
+        <div
+          id="carousel-example-2"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel-example-2"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            <li data-target="#carousel-example-2" data-slide-to="3"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="view">
+                <a href="prejs/hola.html">
+                  <img
+                    class="d-block w-100"
+                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                    alt="Second slide"
+                  />
+                </a>
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Página de registro</h3>
+                <p>Tema: HTML Crudo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <a href="prejs/menu.html">
+                  <img
+                    class="d-block w-100"
+                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                    alt="Second slide"
+                  />
+                </a>
+                <div class="mask rgba-black-strong"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Menú de restaurante</h3>
+                <p>Tema: CSS Float</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <a href="prejs/hotel.html">
+                  <img
+                    class="d-block w-100"
+                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                    alt="Third slide"
+                  />
+                </a>
+                <div class="mask rgba-black-slight"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Página de Reservaciones</h3>
+                <p>Tema: CSS Flexbox</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <a href="prejs/horariogrid.html">
+                  <img
+                    class="d-block w-100"
+                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                    alt="Forth slide"
+                  />
+                </a>
+                <div class="mask rgba-black-slight"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Ejemplo de Horario</h3>
+                <p>Tema: CSS Grid</p>
+              </div>
+            </div>
+          </div>
+          <!--/.Slides-->
+          <!--Controls-->
+          <a
+            class="carousel-control-prev"
+            href="#carousel-example-2"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel-example-2"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </section>
     <span class="scripts">
       <script src="JS/conn.js"></script>
       <script
