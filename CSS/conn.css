@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
+    height: 100%;
+    width: 100%;
     font-family: sans-serif;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
@@ -10,15 +12,29 @@ html {
 }
 
 section {
-    background-color: black;
-    height: 100vh;
+    background-color: white;
+    height: 100%;
+    width: 100%;
     scroll-snap-align: start;
     text-align: center;
     position: relative;
 }
 
-#carousel-example-2, .carousel-item img {
+#carousel-example-2, .carousel-inner, .carousel-item img, .view {
+    
     height: 100vh;
+}
+
+.c1 p, .c1 h3 {
+    color: black;
+}
+
+iframe {
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    margin-top: 70px;
 }
 
 .navbar {
