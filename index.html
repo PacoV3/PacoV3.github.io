@@ -1,333 +1,281 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <link rel="stylesheet" href="CSS/conn.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio - Francisco Ventura</title>
-  </head>
-  <body>
-    <!-- nav de bootstrap -->
-    <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Portafolio - Francisco Ventura</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href=""
-              >Inicio <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Páginas Pre-Javascript
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="prejs/registrousuario.html">Registro online</a>
-              <a class="dropdown-item" href="prejs/menu.html">Ejemplo de Menú</a>
-              <a class="dropdown-item" href="prejs/hotel.html">Reservaciones online</a>
-              <a class="dropdown-item" href="prejs/horariogrid.html">Ejemplo de Horarios</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Páginas Post-Javascript
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="postJS/primero/">Adivina el número</a>
-              <a class="dropdown-item" href="postJS/segundo/">Gato vs Computadora</a>
-              <a class="dropdown-item" href="postJS/tercero/reloj.html">Reloj y contador</a>
-              <a class="dropdown-item" href="postJS/cuarto/index.html">Manipular JSON</a>
-              <a class="dropdown-item" href="postJS/quinto - clima/index.html">Clima XMLHttpRequest</a>
-              <a class="dropdown-item" href="postJS/clima_jquery/index.html">Clima JQuery</a>
-              <a class="dropdown-item" href="postJS/sexto - jquery/cov.html">Datos COVID-19</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Buscar Página"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Buscar
-          </button>
-        </form>
-      </div>
-    </nav>
-    <!-- /nav -->
-    <section>
-      <!--Carousel Wrapper-->
-      <div
-        id="carousel-example-2"
-        class="carousel slide carousel-fade"
-        data-ride="carousel"
-      >
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carousel-example-2"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carousel-example-2" data-slide-to="1"></li>
-          <li data-target="#carousel-example-2" data-slide-to="2"></li>
-          <li data-target="#carousel-example-2" data-slide-to="3"></li>
-        </ol>
-        <!--/.Indicators-->
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <div class="view">
-              <iframe src="prejs/registrousuario.html" frameborder="0" scrolling="no"></iframe>
+
+<head>
+  <link rel="stylesheet" href="CSS/conn.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Francisco Ventura</title>
+</head>
+
+<body>
+  <!-- nav de bootstrap -->
+  <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Portafolio - Francisco Ventura</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Páginas Pre-Javascript
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="prejs/registrousuario.html">Registro online</a>
+            <a class="dropdown-item" href="prejs/menu.html">Ejemplo de Menú</a>
+            <a class="dropdown-item" href="prejs/hotel.html">Reservaciones online</a>
+            <a class="dropdown-item" href="prejs/horariogrid.html">Ejemplo de Horarios</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Páginas Post-Javascript
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="postJS/primero/">Adivina el número</a>
+            <a class="dropdown-item" href="postJS/segundo/">Gato vs Computadora</a>
+            <a class="dropdown-item" href="postJS/tercero/reloj.html">Reloj y contador</a>
+            <a class="dropdown-item" href="postJS/cuarto/index.html">Manipular JSON</a>
+            <a class="dropdown-item" href="postJS/quinto - clima/index.html">Clima XMLHttpRequest</a>
+            <a class="dropdown-item" href="postJS/clima_jquery/index.html">Clima JQuery</a>
+            <a class="dropdown-item" href="postJS/sexto - jquery/cov.html">Datos COVID-19</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar Página" aria-label="Search" />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Buscar
+        </button>
+      </form>
+    </div>
+  </nav>
+  <!-- /nav -->
+  <section>
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        <li data-target="#carousel-example-2" data-slide-to="3"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active itm1">
+          <div class="view">
+            <iframe src="prejs/registrousuario.html" frameborder="0" scrolling="no"></iframe>
             <div class="mask rgba-black-light"></div>
-            </div>
-            <a href="prejs/registrousuario.html" style="text-decoration: none;">
-              <div class="carousel-caption position-sticky">
-                <h3 class="h3-responsive">Página de registro</h3>
-                <p>Tema: HTML Crudo</p>
-              </div>
-            </a>
           </div>
-          <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-              <iframe src="prejs/menu.html" frameborder="0" scrolling="no"></iframe>
+          <a href="prejs/registrousuario.html" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">Página de registro</h3>
+              <p>Tema: HTML Crudo</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item itm2">
+          <!--Mask color-->
+          <div class="view">
+            <iframe src="prejs/menu.html" frameborder="0" scrolling="no"></iframe>
             <div class="mask rgba-black-strong"></div>
-            </div>
-            <a href="prejs/menu.html" style="text-decoration: none;">
-              <div class="carousel-caption position-sticky">
-                <h3 class="h3-responsive">Menú de restaurante</h3>
-                <p>Tema: CSS Float</p>
-              </div>
-            </a>
           </div>
-          <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-              <a href="prejs/hotel.html">
-                <img
-                  class="d-block w-100"
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                  alt="Third slide"
-                />
-              </a>
-              <div class="mask rgba-black-slight"></div>
+          <a href="prejs/menu.html" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">Menú de restaurante</h3>
+              <p>Tema: CSS Float</p>
             </div>
+          </a>
+        </div>
+        <div class="carousel-item itm3">
+          <!--Mask color-->
+          <div class="view">
+            <iframe src="prejs/hotel.html" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-strong"></div>
+          </div>
+          <a href="prejs/hotel.html" style="text-decoration: none;">
             <div class="carousel-caption position-sticky">
               <h3 class="h3-responsive">Página de Reservaciones</h3>
               <p>Tema: CSS Flexbox</p>
             </div>
+          </a>
+        </div>
+        <div class="carousel-item imt4">
+          <!--Mask color-->
+          <div class="view itm4-view">
+            <iframe src="prejs/horariogrid.html" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-strong"></div>
           </div>
-          <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-              <a href="prejs/horariogrid.html">
-                <img
-                  class="d-block w-100"
-                  src="img/GridHorario.bmp"
-                  alt="Forth slide"
-                />
-              </a>
-              <div class="mask rgba-black-slight"></div>
-            </div>
+          <a href="prejs/horariogrid.html" style="text-decoration: none;">
             <div class="carousel-caption position-sticky">
               <h3 class="h3-responsive">Ejemplo de Horarios</h3>
               <p>Tema: CSS Grid</p>
             </div>
-          </div>
+          </a>
         </div>
-        <!--/.Slides-->
-        <!--Controls-->
-        <a
-          class="carousel-control-prev"
-          href="#carousel-example-2"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carousel-example-2"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
       </div>
-      <!--/.Carousel Wrapper-->
-    </section>
-    <section>
-        <!--Carousel Wrapper-->
-        <div
-          id="carousel-example-2"
-          class="carousel slide carousel-fade"
-          data-ride="carousel"
-        >
-          <!--Indicators-->
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carousel-example-2"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carousel-example-2" data-slide-to="1"></li>
-            <li data-target="#carousel-example-2" data-slide-to="2"></li>
-            <li data-target="#carousel-example-2" data-slide-to="3"></li>
-          </ol>
-          <!--/.Indicators-->
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <div class="view">
-                <a href="prejs/hola.html">
-                  <img
-                    class="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-                    alt="Second slide"
-                  />
-                </a>
-                <div class="mask rgba-black-light"></div>
-              </div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Página de registro</h3>
-                <p>Tema: HTML Crudo</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!--Mask color-->
-              <div class="view">
-                <a href="prejs/menu.html">
-                  <img
-                    class="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                    alt="Second slide"
-                  />
-                </a>
-                <div class="mask rgba-black-strong"></div>
-              </div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Menú de restaurante</h3>
-                <p>Tema: CSS Float</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!--Mask color-->
-              <div class="view">
-                <a href="prejs/hotel.html">
-                  <img
-                    class="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                    alt="Third slide"
-                  />
-                </a>
-                <div class="mask rgba-black-slight"></div>
-              </div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Página de Reservaciones</h3>
-                <p>Tema: CSS Flexbox</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!--Mask color-->
-              <div class="view">
-                <a href="prejs/horariogrid.html">
-                  <img
-                    class="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                    alt="Forth slide"
-                  />
-                </a>
-                <div class="mask rgba-black-slight"></div>
-              </div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Ejemplo de Horario</h3>
-                <p>Tema: CSS Grid</p>
-              </div>
-            </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+  </section>
+  <section>
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-3" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-3" data-slide-to="1"></li>
+        <li data-target="#carousel-example-3" data-slide-to="2"></li>
+        <li data-target="#carousel-example-3" data-slide-to="3"></li>
+        <li data-target="#carousel-example-3" data-slide-to="4"></li>
+        <li data-target="#carousel-example-3" data-slide-to="5"></li>
+        <li data-target="#carousel-example-3" data-slide-to="6"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active itm5">
+          <div class="view itm5-view">
+            <iframe src="postJS/primero" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-light"></div>
           </div>
-          <!--/.Slides-->
-          <!--Controls-->
-          <a
-            class="carousel-control-prev"
-            href="#carousel-example-2"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+          <a href="postJS/primero" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">Juego "Adivina el Número"</h3>
+              <p>Primer trabajo con Javascript</p>
+            </div>
           </a>
-          <a
-            class="carousel-control-next"
-            href="#carousel-example-2"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          <!--/.Controls-->
         </div>
-        <!--/.Carousel Wrapper-->
-    </section>
-    <span class="scripts">
-      <script
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"
-      ></script>
-    </span>
-  </body>
+
+        <div class="carousel-item itm6">
+          <div class="view itm6-view">
+            <iframe src="postJS/segundo/index.html" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <a href="postJS/segundo/index.html" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">Gato vs Computadora</h3>
+              <p>Una pista, no puedes ganarle</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item itm7">
+          <div class="view itm7-view">
+            <iframe src="postJS/tercero/reloj.html" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <a href="postJS/tercero/reloj.html" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">Reloj con Date();</h3>
+              <p>Diseño simple de reloj con un contador integrado</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item itm8">
+          <div class="view itm8-view">
+            <iframe src="postJS/cuarto/index.html" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <a href="postJS/cuarto/index.html" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">Form para manipular un json</h3>
+              <p>Primera interacción con el formato json</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item itm9">
+          <div class="view itm9-view">
+            <iframe src="postJS/quinto - clima/index.html" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <a href="postJS/quinto - clima/index.html" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">Consulta XMLHttpRequest</h3>
+              <p>Consulta y manejo de datos a una API de clima</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item itm10">
+          <div class="view itm10-view">
+            <iframe src="postJS/clima_jquery/index.html" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <a href="postJS/tercero/reloj.html" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">Consulta jquery</h3>
+              <p>Primer trabajo con jquery aplicado en la consulta del clima</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item itm11">
+          <div class="view itm11-view">
+            <iframe src="postJS/sexto - jquery/cov.html" frameborder="0" scrolling="no"></iframe>
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <a href="postJS/sexto - jquery/cov.html" style="text-decoration: none;">
+            <div class="carousel-caption position-sticky">
+              <h3 class="h3-responsive">API para datos del COVID-19</h3>
+              <p>Consulta que trae datos del COVID-19</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+  </section>
+  <span class="scripts">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+  </span>
+</body>
+
 </html>

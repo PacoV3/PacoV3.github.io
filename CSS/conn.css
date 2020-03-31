@@ -12,7 +12,7 @@ html, body {
 }
 
 section {
-    background-color: red;
+    background-color: white;
     height: 100%;
     width: 100%;
     scroll-snap-align: start;
@@ -20,7 +20,7 @@ section {
     position: relative;
 }
 
-#carousel-example-2, .carousel-inner, .carousel-item img, .view {
+#carousel-example-2, #carousel-example-3, .carousel-inner, .carousel-item img, .view {
     height: 100vh;
 }
 
@@ -33,14 +33,56 @@ section {
     color: white;
 }
 
-.carousel-control-prev {
+.carousel-control-prev, .carousel-control-next{
     width: 12vh !important;
     background-color: rgba(0,0,0,0.4);
 }
 
+.itm1 {
+    background-color: white;
+}
+
+.itm2 {
+    background-color: rgb(200, 200, 200);
+}
+
+.itm3 {
+    background-color: dimgray;
+}
+
+.itm4 {
+    background-color: rgb(253, 155, 144);
+}
+
+.itm5 {
+    background-color: white;
+}
+
+.itm6 {
+    background-color: #a0a0a0
+}
+
+.itm4-view iframe {
+    margin-top: 0px;
+}
+
+.itm5-view iframe {
+    width: 100%;
+}
+
+.itm6-view iframe {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.itm7-view iframe {
+    width: 100%;
+    margin-top: 0px;
+}
+
 iframe {
     background-color: white;
-    width: 90%;
+    width: 80%;
     height: 100%;
     overflow: hidden;
     margin-top: 53px;
