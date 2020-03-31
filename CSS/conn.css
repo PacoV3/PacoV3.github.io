@@ -12,7 +12,7 @@ html, body {
 }
 
 section {
-    background-color: white;
+    background-color: red;
     height: 100%;
     width: 100%;
     scroll-snap-align: start;
@@ -21,27 +21,36 @@ section {
 }
 
 #carousel-example-2, .carousel-inner, .carousel-item img, .view {
-    
     height: 100vh;
 }
 
-.c1 p, .c1 h3 {
-    color: black;
+.carousel-caption {
+    text-align: center;
+    height: 12vh !important;
+    bottom: 8px !important;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+
+.carousel-control-prev {
+    width: 12vh !important;
+    background-color: rgba(0,0,0,0.4);
 }
 
 iframe {
     background-color: white;
-    width: 100%;
-    height: 90%;
+    width: 90%;
+    height: 100%;
     overflow: hidden;
-    margin-top: 70px;
+    margin-top: 53px;
 }
 
 .navbar {
     height: 53px;
 }
 
-h1  {
+h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
