@@ -26,7 +26,6 @@ section {
 
 .carousel-caption {
     text-align: center;
-    height: 12vh !important;
     bottom: 8px !important;
     width: 100%;
     background-color: rgba(0,0,0,0.7);
